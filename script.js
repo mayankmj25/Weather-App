@@ -83,10 +83,10 @@ function displayData(newData) {
   document.querySelector(
     '.location'
   ).textContent = `${newData.location}, ${newData.region}`;
-  document.querySelector('.degrees').textContent = newData.currentTemp.f;
+  document.querySelector('.degrees').textContent = newData.currentTemp.c;
   document.querySelector(
     '.feels-like'
-  ).textContent = `FEELS LIKE: ${newData.feelsLike.f}`;
+  ).textContent = `FEELS LIKE: ${newData.feelsLike.c}`;
   document.querySelector('.wind-mph').textContent = `WIND: ${newData.wind} MPH`;
   document.querySelector(
     '.humidity'
